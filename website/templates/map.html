@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Map</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+    
+</style>
+</head>
+<body>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+<div id="map"></div>
+
+
+<script>
+        //For map
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia2lydWJhYWhhcmFuIiwiYSI6ImNsMHl6NzZmZzFqbnYzYmtiZnV2Y3VzcnYifQ.5h9G9T4E8PVdbD8g4qUriA';
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [77.728165, 11.342423],//long,lat
+        zoom: 10
+    });
+
+     //For directions
+    map.addControl(
+        new MapboxDirections({
+            accessToken: mapboxgl.accessToken//directions
+        }),
+        'top-left'
+    );
+
+    
+      //For zoom-in & zoom-out
+    const nav=new mapboxgl.NavigationControl();//zoom
+    map.addControl(nav)
+
+//geo location
+
+map.addControl(
+new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+// When active the map will receive updates to the device's location as it changes.
+trackUserLocation: true,
+// Draw an arrow next to the location dot to indicate which direction the device is heading.
+showUserHeading: true
+})
+);
+
+//language
+
+document.getElementById('buttons').addEventListener('click', (event) => {
+    const language = event.target.id.substr('button-'.length);
+    // Use setLayoutProperty to set the value of a layout property in a style layer.
+    // The three arguments are the id of the layer, the name of the layout property,
+    // and the new property value.
+    map.setLayoutProperty('country-label', 'text-field', [
+    'get',
+    `name_${language}`
+    ]);
+    });
+</script>
+
+</body>
+</html>

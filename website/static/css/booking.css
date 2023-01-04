@@ -1,0 +1,160 @@
+
+.formbox {
+    height: 100%;
+    width: 60%;
+    font-size: larger;
+}
+#heading{
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    color: greenyellow;
+    font-size: 3rem;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color:greenyellow;
+}
+input,select{
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.selmenu{
+    margin-left: 1rem;
+    width: 18rem;
+    padding: 0.5rem;
+
+}
+.sec {
+    width: 100%;
+    padding: 5rem 0;
+    background-color: hsl(19, 78%, 46%);
+    border-radius: 0 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formbox {
+    margin-right: 10rem;
+    height: 100%;
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 3rem;
+}
+
+.bookimage {
+    margin-left: 10%;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color:greenyellow;
+}
+
+#book {
+    background-color: greenyellow;
+    border-color: #f7e522;
+    margin-top: 1rem;
+    color: rgb(220, 29, 29);
+}
+
+input {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.15);
+}
+img{
+    transform:scalex(-1);
+    margin-top: 5rem;
+    margin-left: 3rem;
+    width: 100%;
+}
+
+.bookimage {
+    margin-left: 10%;
+}
+
+label {
+    font-size: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+#book {
+    background-color: #dff10e;
+    border-color: white;
+    margin-top: 1rem;
+}
+
+input {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+img {
+    transform: scalex(-1);
+    margin-top: 5rem;
+    margin-left: 3rem;
+    width: 100%;
+}
+
+.username,
+.password,
+.submit {
+    display: block;
+}
+
+.password {
+    margin-top: 5%;
+}
+
+.submit {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border: 2px solid orange;
+}
+
+.signup {
+    /* margin-left: 38%; */
+    font-weight: 500;
+    font-size: 15px;
+    color: blue;
+    text-transform: uppercase;
+}
+
+input {
+    border: none;
+    width: 300px;
+    height: 40px;
+}
+
+.body {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+input:hover,
+input:focus {
+    border: 2px solid pink;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.head {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    color: darkgoldenrod;
+    /* margin-left: 40%; */
+    padding-top: 10%;
+}
+
+.all{
+    margin-left: 40%;    
+}

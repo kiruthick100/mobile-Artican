@@ -1,0 +1,242 @@
+{%extends "layout.html"%}
+{% block content %}
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"> -->
+<head>
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+<!-- Slider container -->
+<!-- <div class="swiper-container">
+  <!-- Slides wrapper -->
+  <!-- <div class="swiper-wrapper">
+      <!-- Slides -->
+      <!-- <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ... other slides ... -->
+  <!-- </div> --> -->
+  <!-- Pagination, if required -->
+  <!-- <div class="swiper-pagination"></div> -->
+<!-- </div> --> -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.slowFade {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    background-image: url("../static/images/car.jpg");
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.slowFade .slide img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #000;
+    background-image: url("../static/images/carpenter.jpg");
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    opacity: 0;
+    transform: scale(1.5) rotate(15deg);
+    -webkit-animation: slowFade 32s infinite;
+            animation: slowFade 32s infinite;
+}
+.slowFade .slide:nth-child(3) img {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+}
+.slowFade .slide:nth-child(2) img {
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;
+}
+.slowFade .slide:nth-child(1) img {
+    -webkit-animation-delay: 24s;
+            animation-delay: 24s;
+}
+@keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+</style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to create an awesome awesome CSS slideshow</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> </head>
+<body>
+  
+</body>
+</html>
+<div class="slides slowFade">
+    <div class="slide">
+        <img src="../static/images/booking.jpg" alt="img"/>
+    </div>
+    <div class="slide">
+        <img src="../static/images/carpenter.jpg" alt="img"/>
+    </div>
+    <div class="slide">
+        <img src="../static/images/login.jpg" alt="img"/>
+    </div>
+    <div class="slide">
+        <img src="../static/images/testimonials-bg.jpg" alt="img"/>
+    </div>
+    <br>
+    <br>
+
+</div>
+      
+    <div class="services" id="services">
+      <div class="services-content d-flex flex-column flex-wrap">
+        <div class="section-title">
+          <h1>services</h1>
+          <span>What we do</span>
+        </div>
+    
+        <div class="services-content-description">
+          <div class="box">
+            <div class="inner">
+              <img src="../static/images/car.jpg">
+              <p>car driver</p>
+            </div>
+          </div>
+    
+          <div class="box">
+            <div class="inner">
+              <img src="../static/images/carpenter.jpg">
+              <p>carpenter</p>
+            </div>
+          </div>
+    
+          <div class="box">
+            <div class="inner">
+              <img src="../static/images/plummer.jpg">
+              <p>plummer</p>
+            </div>
+          </div>
+    
+          <div class="box">
+            <div class="inner">
+              <img src="../static/images/cook.jpg">
+              <p>cook</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="inner">
+              <img src="../static/images/child care.jpg">
+              <p>child care</p>
+            </div>
+          </div>
+    
+          <div class="box">
+            <div class="inner">
+              <img src="../static/images/mechanic.jpg">
+              <p>mechanic</p>
+            </div>
+          </div>
+    
+          <!-- <div class="box">
+            <div class="inner">
+              <img src="../static/images/waxing.png">
+              <p>waxing</p>
+            </div>
+          </div>
+    
+          <div class="box">
+            <div class="inner">
+              <img src="../static/images/skin cleansing.png">
+              <p>skin cleansing</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <footer id="footer">
+
+    <br>
+    <br>
+    <br>
+
+
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3><span>Helpcenter</span></h3>
+                <p>
+                  A108 Adam Street <br>
+                  New York, NY 535022<br>
+                  United States <br><br>
+                  <strong>Phone:</strong> +1 5589 55488 55<br>
+                  <strong>Email:</strong> info@example.com<br>
+                </p>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+    
+              
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Social Networks</h4>
+                <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                <div class="social-links mt-3">
+                    <!-- <a href="#" class="bx bxl-facebook"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-reddit"></a> -->
+                  <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></i></a>
+                  <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></i></a>
+                  <a href="#" class="google-plus"><i class="fa-brands fa-skype"></i></i></a>
+                  <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="container py-4">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Helpcenter</span></strong>. All Rights Reserved
+          </div>
+    </div>
+  </body>
+
+    {%endblock%}

@@ -1,0 +1,292 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Worker Details </title>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+                <link rel="stylesheet" href="../static/css/booking.css">
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <style>
+   .grid-container {
+    display: grid;
+  gap: 50px 100px;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto ;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(227, 20, 20, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+    </style>
+    
+</head>
+<body>
+  {% for  new_data in new_data %}
+  <div class="grid-container">
+    <div class="grid-item">
+        
+      <p style="font-size:20px">Worker Photo</p>
+  <img src="data:;base64,{{ new_data.rendered_data1 }}" width="150px" height="150px"></img><br>
+  <br><h6>Worker ID</h6>
+ <h6> {{new_data.cusid}}</h6>
+<h6>Name</h6>
+<p style="font-size:15px">{{new_data.username}}</p>
+<h6>Door Number</h6>
+<p style="font-size:15px">{{new_data.houseno}}</p>
+<h6>Address</h6>
+<p style="font-size:15px">{{new_data.address}}</p>
+<h6>Amount</h6>
+<p style="font-size:15px">{{new_data.amount}}</p>
+<form action="/booking">
+<h6><button value="new_data.email" class="green" name="email" >Booking</button></h6>
+</form>
+<h6><button onclick="window.location.href='/location'">Location</button></h6>
+
+</div>
+{% endfor %}
+<!-- <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.031 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+
+</script> -->
+
+<!-- <div class="jumbotron text-center">
+  <h1>WORKERS DETAILS</h1>
+</div>
+  
+<!-- <div class="continer">
+  <div class="row"> -->
+    <!-- <div class="grid-container">
+      <div class="grid-item">
+      {% for  new_data in new_data %}
+        
+            <p style="font-size:20px">Customer Photo</p>
+        <img src="data:;base64,{{ new_data.rendered_data1 }}" width="150px" height="150px"></img><br>
+        <br><h6>Customer ID</h6>
+        {{new_data.cusid}}
+    <h6>Name</h6>
+    <p style="font-size:15px">{{new_data.username}}</p>
+    <h6>Door Number</h6>
+    <p style="font-size:15px">{{new_data.houseno}}</p>
+    <h6>Address</h6>
+    <p style="font-size:15px">{{new_data.address}}</p>
+    <h6>Amount</h6>
+    <p style="font-size:15px">{{new_data.amount}}</p>
+    
+    
+      
+        {% endfor %}
+    
+        
+    
+    </div>
+  </div> 
+     -->
+  <!-- </div>
+</div> -->
+
+</body>
+<!-- </html>
+
+<head>
+    <head>
+    <title>worker</title>
+</head>
+   
+<body> -->
+    <!-- {% for  new_data in new_data %}
+        <div>
+            <p style="font-size:20px">Customer Photo</p>
+        <img src="data:;base64,{{ new_data.rendered_data1 }}" width="150px" height="150px"></img><br>
+        <br><h2>Customer ID</h2>
+        <p style="font-size:15px">{{new_data.cusid}}</p><hr>
+    <h3>Name</h3>
+    <p style="font-size:15px">{{new_data.username}}</p><hr>
+    <h4>Door Number</h4>
+    <p style="font-size:15px">{{new_data.houseno}}</p><hr>
+    <h5>Address</h5>
+    <p style="font-size:15px">{{new_data.address}}</p><hr>
+    <h6>Amount</h6>
+    <p style="font-size:15px">{{new_data.amount}}</p><hr>
+    
+    
+        </div>
+        {% endfor %}
+    
+        
+     --> 
+     </html> -->
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Worker Details </title>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+                <link rel="stylesheet" href="../static/css/style1.css">
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <style>
+   .grid-container {
+    display: grid;
+  gap: 100px 100px;
+  grid-template-columns: auto auto  ;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(227, 20, 20, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+    </style>
+    
+</head>
+<body>
+ 
+  {% for  new_data in new_data %}
+  <div class="grid-container">
+    <div class="grid-item">   
+     <img src="data:;base64,{{ new_data.render_data1 }}" width="150px" height="150px"></img><br>
+     <br><h6>Worker ID</h6>
+ <h6> {{new_data.cusid}}</h6>
+<h6>Name</h6>
+<p style="font-size:15px">{{new_data.username}}</p>
+<!-- <h6>Door Number</h6>
+<p style="font-size:15px">{{new_data.houseno}}</p>
+<h6>Address</h6>
+<p style="font-size:15px">{{new_data.address}}</p> -->
+<h6>Email</h6>
+<!-- <p style="font-size:15px">{{new_data.amount}}</p> -->
+<p style="font-size:15px">{{new_data.email}}</p>
+
+<h6> {{new_data.id}}</h6>
+
+<form action="/booking" method="post">
+  <h6><button value="{{new_data.email}}" class="green" name="email" >Booking</button></h6>
+</form>
+
+<h6><button onclick="window.location.href='/location'">Location</button></h6>
+
+</div>
+{% endfor %}
+<!-- <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.031 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+
+</script> -->
+
+<!-- <div class="jumbotron text-center">
+  <h1>WORKERS DETAILS</h1>
+</div>
+  
+<!-- <div class="continer">
+  <div class="row"> -->
+    <!-- <div class="grid-container">
+      <div class="grid-item">
+      {% for  new_data in new_data %}
+        
+            <p style="font-size:20px">Customer Photo</p>
+        <img src="data:;base64,{{ new_data.rendered_data1 }}" width="150px" height="150px"></img><br>
+        <br><h6>Customer ID</h6>
+        {{new_data.cusid}}
+    <h6>Name</h6>
+    <p style="font-size:15px">{{new_data.username}}</p>
+    <h6>Door Number</h6>
+    <p style="font-size:15px">{{new_data.houseno}}</p>
+    <h6>Address</h6>
+    <p style="font-size:15px">{{new_data.address}}</p>
+    <h6>Amount</h6>
+    <p style="font-size:15px">{{new_data.amount}}</p>
+    
+    
+      
+        {% endfor %}
+    
+        
+    
+    </div>
+  </div> 
+     -->
+  <!-- </div>
+</div> -->
+
+</body>
+<!-- </html>
+
+<head>
+    <head>
+    <title>worker</title>
+</head>
+   
+<body> -->
+    <!-- {% for  new_data in new_data %}
+        <div>
+            <p style="font-size:20px">Customer Photo</p>
+        <img src="data:;base64,{{ new_data.rendered_data1 }}" width="150px" height="150px"></img><br>
+        <br><h2>Customer ID</h2>
+        <p style="font-size:15px">{{new_data.cusid}}</p><hr>
+    <h3>Name</h3>
+    <p style="font-size:15px">{{new_data.username}}</p><hr>
+    <h4>Door Number</h4>
+    <p style="font-size:15px">{{new_data.houseno}}</p><hr>
+    <h5>Address</h5>
+    <p style="font-size:15px">{{new_data.address}}</p><hr>
+    <h6>Amount</h6>
+    <p style="font-size:15px">{{new_data.amount}}</p><hr>
+    
+    
+        </div>
+        {% endfor %}
+    
+        
+     --> 
+     </html>
